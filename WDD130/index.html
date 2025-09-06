@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brian J. Rios</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="#">Home</a>
+                <a href="wwr/">Rafting Website</a>
+            </nav>
+        </header>
+        <main>
+            <h1>
+                Brian J. Rios | WWD 130
+            </h1>
+            <img src="images/profile.jpg" alt="Brian J. Rios" width="200">
+            <style>
+                .bio { white-space: pre-line; } 
+            </style>
+            <p class="bio">
+                My name is Brian J. Rios,
+                I'm 34 years old,
+                I served a mission in the North Guatemala (Cobán) Mission
+                I work at Drimer, a company that makes mattresses, box springs, pillows, and bedroom products
+                I'm single
+                I serve in my ward as a seminary teacher
+            </p>
+        </main>
+        <footer>
+            <p>&copy; <time id="year" datetime="2025">2025</time> Brian Rios — Perú</p>
+        </footer>
+        <script>
+            // current date
+            const y = new Date().getFullYear();
+            const t = document.getElementById('year');
+            t.textContent = y;
+            t.setAttribute('datetime', String(y));
+        </script>
+        <style>
+            footer { text-align:center; padding:1rem 0; }
+            footer p { margin:0; font-size:.9rem; opacity:.8; }
+        </style>
+    </body>
+</html>
